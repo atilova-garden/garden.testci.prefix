@@ -7,7 +7,7 @@ pipeline {
                  script {
                      sh 'echo "Commit: $(git rev-parse HEAD)"'
                      sh 'echo "Repo: $(basename -s .git `git config --get remote.origin.url`)"'
-                     sleep time: 60, unit: 'SECONDS'
+                     sleep time: 20, unit: 'SECONDS'
                  }
              }
          }
