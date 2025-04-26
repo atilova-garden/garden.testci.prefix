@@ -2,7 +2,7 @@ pipeline {
      agent any
  
      stages {
-         stage('Show Git Info') {
+         stage('Show Git Info!') {
              steps {
                  script {
                      sh 'echo "Commit: $(git rev-parse HEAD)"'
